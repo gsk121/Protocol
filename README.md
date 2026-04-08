@@ -52,8 +52,7 @@
 - `Web/slowlorisattack.py`: HTTP 헤더 종료를 지연/누락하며 연결을 유지하는 slowloris 계열 실험 코드다.
 - `Web/slowreadattack.py`: 큰 Content-Length 선언 후 본문 전송을 매우 느리게 지속하는 slow POST 계열 코드다.
 
-## 제한 및 관찰 사항
+## 특이사항
 
 - 모듈 import 경로가 `from eth import *` 형태로 작성되어 있어, 실행 위치/`PYTHONPATH`에 따라 import 실패 가능성이 있다.
-- 일부 코드에는 오탈자/일관성 이슈(예: 파일명 `tcpechoclien.py`, `posion*.py`)가 존재한다.
 - 본 저장소는 학습용 스크립트 집합이며, 에러 처리·재시도·로깅·테스트 자동화가 체계화된 배포용 구조는 아니다.
